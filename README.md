@@ -117,6 +117,35 @@ public Bitmap dajmiSlika()
 <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn1/v/t34.0-12/10318758_778561422163606_633231129_n.jpg?oh=06181576ebe908727e45e28e8b0a6f2a&oe=5371E8C9&__gda__=1399945084_c88a78bc1a1b09784ee1b9c450aedfa6" width= 900 >
 </td></tr>
 <tr>
+<td><a>
+ private void button2_Click(object sender, EventArgs e)<br>
+        {<br>
+
+            Stream str = File.Create("igra.bin");<br>
+            BinaryFormatter bf = new BinaryFormatter();<br>
+            bf.Context = new<br>
+            StreamingContext(StreamingContextStates.CrossAppDomain);<br>
+            bf.Serialize(str, lista);<br>
+            str.Close();<br>
+        }<br>
+<br>
+        private void button3_Click(object sender, EventArgs e)<br>
+        {<br>
+            Stream str = File.OpenRead("igra.bin");<br>
+            BinaryFormatter bf = new BinaryFormatter();<br>
+            lista = (ListaIgraci)bf.Deserialize(str);<br>
+            igrach1 = lista.lista[0];<br>
+            igrach2 = lista.lista[1];<br>
+            izcrtaj();<br>
+            str.Close();<br>
+        }<br>
+
+        <br>
+</a>
+</td>
+</tr>
+
+<tr>
 <td>
 Изработиле:<br>
 Деница Веселиновска 125007<br>
