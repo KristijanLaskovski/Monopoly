@@ -88,19 +88,19 @@ Monopoly
 <a name="blockquotes">
 <br>
 public Bitmap dajmiSlika()
-<br>        {
-<br>            Bitmap b = null;
-<br>            if (pozicija < niza.Length)
-<br>            {
-<br>                b = niza[pozicija++];
-<br>            }
-<br>            else
-<br>            {
-<br>                pozicija = 0;
-<br>                b = niza[pozicija++];
-<br>            }
-<br>            return b;
-<br>        }
+<br> &nbsp;{
+<br>&nbsp;&nbsp;Bitmap b = null;
+<br>&nbsp;&nbsp;if (pozicija < niza.Length)
+<br>&nbsp;&nbsp;{
+<br>&nbsp;&nbsp;&nbsp;b [pozicija++];
+<br>&nbsp;&nbsp;}
+<br>&nbsp;&nbsp;else
+<br>&nbsp;&nbsp;{
+<br>&nbsp;&nbsp;&nbsp;pozicija = 0;
+<br>&nbsp;&nbsp;&nbsp;b = niza[pozicija++];
+<br>&nbsp;&nbsp;}
+<br>&nbsp;&nbsp;return b;
+<br>&nbsp;&nbsp;}
 
 </a>
 
