@@ -85,10 +85,8 @@ Monopoly
 </td></tr>
 </table>
 
-<a>
 
-```no highlight
-public Bitmap dajmiSlika()
+`public Bitmap dajmiSlika()
         {
             Bitmap b = null;
             if (pozicija < niza.Length)
@@ -102,8 +100,7 @@ public Bitmap dajmiSlika()
             }
             return b;
         }
-```
-</a>
+`
 
 
 
