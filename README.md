@@ -1,7 +1,7 @@
 Monopoly
 ========
 Изработна на семинарска работа на тема: Монопол
-<ul><li>Цел:</li></ul>
+<ul><li><b>Цел:</b></li></ul>
 <table>
 <tr>
 <td>
@@ -86,7 +86,7 @@ Monopoly
 </table>
 
 <a name="blockquotes">
-``no highlight
+
 public Bitmap dajmiSlika()
         {
             Bitmap b = null;
