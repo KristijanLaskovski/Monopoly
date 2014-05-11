@@ -116,4 +116,12 @@ public Bitmap dajmiSlika()
 
 <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn1/v/t34.0-12/10318758_778561422163606_633231129_n.jpg?oh=06181576ebe908727e45e28e8b0a6f2a&oe=5371E8C9&__gda__=1399945084_c88a78bc1a1b09784ee1b9c450aedfa6" width= 900 >
 </td></tr>
+<tr>
+<td>
+Изработиле:<br>
+Деница Веселиновска 125007<br>
+Дениција Стојановска 125005<br>
+Викторија Денчовска 125001<br>
+</td>
+</tr>
 </table>
