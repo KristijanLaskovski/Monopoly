@@ -74,7 +74,7 @@ namespace Monopol
             d2.Ime = "Франција";
             Grad g3 = new Grad();
             g3.Ime = "Париз";
-            g3.Opis = "Париз е град сместен во северниот дел Франција на бреговите на реката Сена";
+        g3.Opis = "Париз е град сместен во северниот дел Франција на бреговите на реката Сена";
             g3.Cena = 12000;
             g3.Danok = g3.Cena * 3 / 10;
             g3.Slika = new Bitmap(Properties.Resources.PARIZ);
@@ -213,7 +213,7 @@ namespace Monopol
             tabla.Add(karticki[3]);//Iznenaduvanje 3
             tabla.Add(karticki1[5]);//Danok
             tabla.Add(d6.Gradovi[1]);//Rim
-
+            //kocka
             animacija = new Animacija(new Bitmap[] { Properties.Resources.frame_000,Properties.Resources.frame_001,
                 Properties.Resources.frame_002,Properties.Resources.frame_003,Properties.Resources.frame_004,Properties.Resources.frame_005,
                 Properties.Resources.frame_006, Properties.Resources.frame_007,Properties.Resources.frame_008,
