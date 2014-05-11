@@ -21,16 +21,19 @@ Monopoly
 <tr><td>
 <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn2/v/t34.0-12/10339091_10202020409090896_649102514_n.jpg?oh=9b02e8e3066476b57e5778ac94456c85&oe=5371649B&__gda__=1399979572_c8afae5e571178732e90c939ea2ed3ff" wigth=1000/>
 
-</td></tr></table>
-
+</td></tr>
+<tr><td>
 <h1>Правила на игра:</h1>
+</td></tr>
+<tr>
+<td>
 
 <ul>
 <li>Играчи:
 </li>
 <ul>
-
-<table>
+</td>
+</tr>
 <tr>
 <td>
 <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn2/v/t34.0-12/10335796_10202021236991593_2080515999_n.jpg?oh=62e5bd7ad43ce09b3c6924553f407c75&oe=53720651&__gda__=1399955829_b9e9b85cd3568909238dd8e68bafe27b" width=1000>
