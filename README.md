@@ -1,5 +1,5 @@
 Monopoly
 ========
 Изработна на семинарска работа на тема: Монопол
-<p><div color="BLUE">Цел</div>
+&nbsp &nbsp &nbsp &nbsp <p><div color="BLUE">Цел</div>
 
