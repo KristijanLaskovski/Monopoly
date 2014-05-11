@@ -85,7 +85,8 @@ Monopoly
 </td></tr>
 </table>
 
-<a name="blockquotes"/>
+<a>
+
 ```no highlight
 public Bitmap dajmiSlika()
         {
