@@ -1,0 +1,788 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BACFD31-FBB6-4EE4-9472-BCED33DE2CA1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Monopol</RootNamespace>
+    <AssemblyName>Monopol</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animacija.cs" />
+    <Compile Include="Drzava.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaRazno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaRazno.Designer.cs">
+      <DependentUpon>FormaRazno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGrad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGrad.designer.cs">
+      <DependentUpon>FormGrad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHelp.Designer.cs">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grad.cs" />
+    <Compile Include="Igrach.cs" />
+    <Compile Include="Karticka.cs" />
+    <Compile Include="ListaIgraci.cs" />
+    <Compile Include="NewGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewGame.designer.cs">
+      <DependentUpon>NewGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pochetna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pochetna.designer.cs">
+      <DependentUpon>Pochetna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pole.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaRazno.resx">
+      <DependentUpon>FormaRazno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGrad.resx">
+      <DependentUpon>FormGrad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHelp.resx">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewGame.resx">
+      <DependentUpon>NewGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pochetna.resx">
+      <DependentUpon>Pochetna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aBUDABI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balonce1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balonceNeBrisi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bankrot.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bb.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BERLIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bingo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bp1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bp2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bp3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c10.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c12.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c13.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c14.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c15.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c17.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c18.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c19.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cartoon_Boing_Jump_Sound_Effect_[High_Quality_Free.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc10.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc12.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc13.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc14.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc15.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc17.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc18.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc19.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc20.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc21.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc22.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc23.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc25.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc26.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc27.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc28.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc30.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc31.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coins_Free_Sound_Effects.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\covece22.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\covek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\covek121.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\danok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\danok2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice_roll_sound_effect.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DUBAI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frame_000.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frame_001.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frame_002.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frame_003.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frame_004.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frame_005.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frame_006.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frame_007.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frame_008.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frame_009.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gotoJail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradPozadina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gray.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\igraj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IGRATA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iz_000.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iz_001.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iz_002.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iz_003.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iz_004.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iz_005.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izlez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvicnik_000.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvicnik_001.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvicnik_002.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvicnik_003.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvicnik_004.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvicnik_005.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvicnik_006.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvicnik_007.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvicnik_008.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvicnik_009.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvicnik_010.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvicnik_011.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvicnik_012.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izvicnik_013.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kocki.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KRAJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kraj1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kraj2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LION.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\London.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MARSEJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MILANO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MINEHN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monopolnas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monopoly_Deluxe_Music_2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MSTER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nazad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nigra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nova_igra1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\novaStrela2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\novaStrelka.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\novoSansa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PARIZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parking.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parkingS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\platete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\podignete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pomos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popu - Copy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadinaa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadinaGrad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadinaKarticki.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prasalnik_000.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prasalnik_001.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prasalnik_002.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prasalnik_003.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prasalnik_004.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prasalnik_005.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prasalnik_006.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prasalnik_007.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prasalnik_008.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prasalnik_009.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prasalnik_010.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prasalnik_011.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prasalnik_012.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prasalnik_013.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prashalnik.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pravilaNaIgra.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prazno.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resetki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RIM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sansa_000.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sansa_001.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sansa_002.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sansa_003.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sansa_004.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sansa_005.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sansa11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shansa1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skok1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sp22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\specijalni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\specijalnipolinja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_large.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strelka1 - Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\strelka2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\surprise2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tax.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tex.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\too.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\value.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yeey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zaplakanje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zatvor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zatvor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zatvor2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zatvor4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zatvor11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zatvor12.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zeleno1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finkifinki.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finki1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nazadHelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cestitki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viepobedivte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tom_und_Jerry_german_Intro.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
