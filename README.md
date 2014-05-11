@@ -117,8 +117,7 @@ public Bitmap dajmiSlika()
 <img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn1/v/t34.0-12/10318758_778561422163606_633231129_n.jpg?oh=06181576ebe908727e45e28e8b0a6f2a&oe=5371E8C9&__gda__=1399945084_c88a78bc1a1b09784ee1b9c450aedfa6" width= 900 >
 </td></tr>
 <tr>
-<td><a name="blockquotes"/>
-```no-highlight
+<td><a>
  private void button2_Click(object sender, EventArgs e)<br>
         {<br>
 
@@ -142,7 +141,6 @@ public Bitmap dajmiSlika()
         }<br>
 
         <br>
- ```
 </a>
 </td>
 </tr>
@@ -150,7 +148,7 @@ public Bitmap dajmiSlika()
 <tr>
 <td>
 <h1>
-5) Изработиле:<h1>
+5) Изработиле:</h1>
 </td>
 <tr>
 <td>
