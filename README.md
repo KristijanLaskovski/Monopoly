@@ -10,7 +10,7 @@ Monopoly
 
 Играта започнува со кратко slide show со кое се обидовме да доловиме дел од поинтересните МОНОПОЛ моменти, по кое се појавува формата на сликата подолу, која го претставува главното мени.
 
-<img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn2/v/t34.0-12/10339091_10202020409090896_649102514_n.jpg?oh=9b02e8e3066476b57e5778ac94456c85&oe=5371649B&__gda__=1399979572_c8afae5e571178732e90c939ea2ed3ff"/>
+<img src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-prn2/v/t34.0-12/10339091_10202020409090896_649102514_n.jpg?oh=9b02e8e3066476b57e5778ac94456c85&oe=5371649B&__gda__=1399979572_c8afae5e571178732e90c939ea2ed3ff" height="200" -webkit-box-pack:center/>
 
 <h1>Правила на игра:</h1>
 <ul>
