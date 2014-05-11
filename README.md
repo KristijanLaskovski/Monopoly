@@ -86,20 +86,20 @@ Monopoly
 </table>
 
 
-`public Bitmap dajmiSlika()
-        {
-            Bitmap b = null;
-            if (pozicija < niza.Length)
-            {
-                b = niza[pozicija++];
-            }
-            else
-            {
-                pozicija = 0;
-                b = niza[pozicija++];
-            }
-            return b;
-        }
+`public Bitmap dajmiSlika()<br>
+        {<br>
+            Bitmap b = null;<br>
+            if (pozicija < niza.Length)<br>
+            {<br>
+                b = niza[pozicija++];<br>
+            }<br>
+            else<br>
+            {<br>
+                pozicija = 0;<br>
+                b = niza[pozicija++];<br>
+            }<br>
+            return b;<br>
+        }<br>
 `
 
 
